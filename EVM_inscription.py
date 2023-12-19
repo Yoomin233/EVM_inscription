@@ -7,16 +7,16 @@ private_key = ''
 # Chose chain, uncomment the target chain below
 # rpc_link = 'https://eth-mainnet.g.alchemy.com/v2/Q1q4tFJe4hUf4iOJWM7SMW7Dtn2iwCvP'# ETH
 #rpc_link = 'https://bsc-dataseed3.binance.org/' #BSC
-rpc_link = 'https://polygon-mainnet.g.alchemy.com/v2/hrLvjZ3LRWuPItG9LuYsZQcRU_XtvRmX' # polygon
+# rpc_link = 'https://polygon-mainnet.g.alchemy.com/v2/hrLvjZ3LRWuPItG9LuYsZQcRU_XtvRmX' # polygon
 # rpc_link = 'https://oktc-mainnet.public.blastapi.io' #OKT
-# rpc_link = 'https://api.avax.network/ext/bc/C/rpc' #AVAX
+rpc_link = 'https://api.avax.network/ext/bc/C/rpc' #AVAX
 
 # Enter the repeat times of inscriptions
-no_to_mint = 3
+no_to_mint = 1
 
 # Enter the data to inscribe
 # 0x is not required
-hex_data = "93c8ac01bae28307f2c017c134998e92951a66c80c1ad30f8125390c46476eaa"
+hex_data = "646174613a2c7b2270223a226173632d3230222c226f70223a226d696e74222c227469636b223a2264696e6f222c22616d74223a22313030303030303030227d"
 
 # Enter the price factor to the current gas fee
 # 1 means to use the current gas fee
@@ -49,3 +49,5 @@ for i in range(no_to_mint):
     tx_hash = txn_receipt.transactionHash.hex()
 
     print(f"The inscription {i+1} is completed, transaction hash is {tx_hash}.")
+
+    
